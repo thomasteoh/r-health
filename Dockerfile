@@ -14,7 +14,7 @@ RUN apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD5
 RUN add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
 
 # Install R
-RUN apt-get install -y r-base
+RUN apt-get install -y r-base r-base-dev
 
 # Install R package specific dependencies
 RUN apt-get install -y \
