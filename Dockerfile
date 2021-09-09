@@ -20,6 +20,7 @@ RUN apt-get install -y r-base r-base-dev
 RUN apt-get install -y \
       git \
       libcurl4-openssl-dev \
+      libsecret-1-dev \
       libsodium-dev\
       libssl-dev \
       libxml2-dev \
