@@ -20,12 +20,19 @@ RUN apt-get install -y r-base r-base-dev
 RUN apt-get install -y \
       git \
       libcurl4-openssl-dev \
+      libfontconfig1-dev \
+      libfreetype6-dev \
+      libfribidi-dev \
+      libharfbuzz-dev \
+      libjpeg-dev \
+      libpng-dev \
       libsecret-1-dev \
       libsodium-dev\
       libssl-dev \
+      libtiff5-dev \
       libxml2-dev \
       unixodbc-dev
 
 # Install common R packages
-RUN Rscript -e "install.packages(c('devtools', 'tidyverse', 'data.table', 'odbc', 'DBI', 'rmarkdown'))"
+RUN Rscript -e "install.packages(c('devtools', 'pkgdown', 'tidyverse', 'data.table', 'odbc', 'DBI', 'rmarkdown'))"
 
